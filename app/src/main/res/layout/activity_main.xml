@@ -1,18 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.lonelyyhu.exercise.customviewgroup.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.lonelyyhu.exercise.customviewgroup.MainActivity">
 
-    <TextView
+    <com.lonelyyhu.exercise.customviewgroup.CustomViewGroup
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="200dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        >
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#6A5ACD"
+            android:text="TV1"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#FFFF00"
+            android:text="TV2"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#6B8E23"
+            android:text="TV3"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00FFFF"
+            android:text="TV4"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+
+    </com.lonelyyhu.exercise.customviewgroup.CustomViewGroup>
+
+
+</LinearLayout>

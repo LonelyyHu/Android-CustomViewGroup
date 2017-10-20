@@ -2,6 +2,7 @@ package com.lonelyyhu.exercise.customviewgroup;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -69,7 +70,7 @@ public class CustomViewGroup extends ViewGroup {
                 topWidth += childWidth + childParams.leftMargin + childParams.rightMargin;
             }
 
-            if (i==1 || i==2) {
+            if (i==0 || i==2) {
                 leftHeight += childHeight + childParams.topMargin + childParams.bottomMargin;
             }
 
@@ -86,6 +87,13 @@ public class CustomViewGroup extends ViewGroup {
         width = Math.max(topWidth, bottomWidth);
         height = Math.max(leftHeight, rightHeight);
 
+        Log.wtf("CustomViewGroup", "onMeasure =>" + (widthMode == MeasureSpec.EXACTLY));
+        Log.wtf("CustomViewGroup", "onMeasure => sizeWidth:" + sizeWidth);
+        Log.wtf("CustomViewGroup", "onMeasure => width:" + width);
+        Log.wtf("CustomViewGroup", "onMeasure =>" + (heightMode == MeasureSpec.EXACTLY));
+        Log.wtf("CustomViewGroup", "onMeasure => sizeHeight:" + sizeHeight);
+        Log.wtf("CustomViewGroup", "onMeasure => height:" + height);
+
         setMeasuredDimension( (widthMode == MeasureSpec.EXACTLY) ? sizeWidth : width,
                               (heightMode == MeasureSpec.EXACTLY) ? sizeHeight : height );
 
@@ -93,6 +101,9 @@ public class CustomViewGroup extends ViewGroup {
 
     @Override
     protected void onLayout(boolean b, int i, int i1, int i2, int i3) {
+
+        Log.wtf("CustomViewGroup", "onLayout => getHeight:" + getHeight());
+        Log.wtf("CustomViewGroup", "onLayout => getWidth:" + getWidth());
 
         int childCount = getChildCount();
         int childWidth = 0;
@@ -132,6 +143,11 @@ public class CustomViewGroup extends ViewGroup {
 
             cr = cl + childWidth;
             cb = ct + childHeight;
+
+            Log.wtf("CustomViewGroup", "onLayout => left:" + cl);
+            Log.wtf("CustomViewGroup", "onLayout => top:" + ct);
+
+
 
             childView.layout(cl, ct, cr, cb);
 
