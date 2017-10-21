@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="moveableBallView">
+        <attr name="TextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="rainbowBar">
+        <attr name="barColor" format="reference|color"/>
+        <attr name="barColors" format="reference"/>
+        <attr name="hSpace" format="dimension"/>
+        <attr name="vSpace" format="dimension"/>
+    </declare-styleable>
+
+</resources>

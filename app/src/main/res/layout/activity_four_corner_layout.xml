@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lonelyyhu.exercise.customviewgroup.FourCornerLayoutActivity">
+
+
+    <com.lonelyyhu.exercise.customviewgroup.view.FourCornerLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#6A5ACD"
+            android:text="TV1"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#FFFF00"
+            android:text="TV2"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#6B8E23"
+            android:text="TV3"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00FFFF"
+            android:text="TV4"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+
+    </com.lonelyyhu.exercise.customviewgroup.view.FourCornerLayout>
+
+
+</android.support.constraint.ConstraintLayout>

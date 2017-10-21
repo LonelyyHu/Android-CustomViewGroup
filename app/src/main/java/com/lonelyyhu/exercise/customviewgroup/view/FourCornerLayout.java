@@ -1,4 +1,4 @@
-package com.lonelyyhu.exercise.customviewgroup;
+package com.lonelyyhu.exercise.customviewgroup.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -10,22 +10,22 @@ import android.view.ViewGroup;
  * Created by hulonelyy on 2017/10/19.
  */
 
-public class CustomViewGroup extends ViewGroup {
+public class FourCornerLayout extends ViewGroup {
 
 
-    public CustomViewGroup(Context context) {
+    public FourCornerLayout(Context context) {
         super(context);
     }
 
-    public CustomViewGroup(Context context, AttributeSet attrs) {
+    public FourCornerLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CustomViewGroup(Context context, AttributeSet attrs, int defStyleAttr) {
+    public FourCornerLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-    public CustomViewGroup(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public FourCornerLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
 
